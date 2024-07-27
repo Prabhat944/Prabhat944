@@ -1,7 +1,8 @@
 :root {
     --primary-color: #3D53A0;
 	--primary-color-2: #EDE8F5;
-    --secondary-color: #8697C4;
+    --primary-color-3: #FFF;
+    --secondary-color: #8f9ec6;
 	--secondary-color-2: #ADBBDA;
 }
 
@@ -607,7 +608,7 @@ ol.type li a:hover {
 /* Resume Section */
 #resume {
 	padding: 100px 0;
-	background: #f6f6f6;
+	background: var(--primary-color-3);
 }
 
 .timeline {
