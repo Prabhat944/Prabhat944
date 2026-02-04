@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Prabhat Kumar - Software Engineer</title>
+  <title>Prabhat Kumar - Mobile Application Developer</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -38,6 +38,12 @@
     ================================================== -->
   <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/animations.css">
+  
+  <!-- Icon Libraries -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
   <!-- <script type="text/javascript" src="js/modernizr.custom.js"></script> -->
@@ -54,7 +60,7 @@
 
   <!-- Preloader Start -->
   <div class="preloader">
-    <p>Loading...</p>
+    <p>Loading Portfolio...</p>
   </div>
   <!-- Preloader End -->
 
@@ -68,7 +74,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand page-scroll" href="#page-top"><strong>Prabhat kumar</strong></a>
+          <!-- <a class="navbar-brand page-scroll" href="#page-top"><strong>Prabhat kumar</strong></a> -->
         </div>
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
           <ul class="nav navbar-nav">
@@ -86,260 +92,502 @@
   </div>
 
   <!-- Banner -->
-  <section id="banner">
+  <section id="banner" style="background: var(--gradient-hero); position: relative; overflow: hidden;">
     <div class="inner">
       <header>
-        <!-- <h1>Welcome to Projection</h1> -->
-        <div class="col-md-12 text-center"><img src="img/profile.jpg" class="img-responsive"></div>
+        <div class="col-md-12 fade-in" style="width: 100%; padding: 0 15px; box-sizing: border-box;">
+          <div class="row" style="align-items: center; justify-content: center;">
+            <!-- Profile Image - Left Side on Desktop -->
+            <div class="col-md-4 col-sm-12 text-center" style="margin-bottom: 30px;">
+              <div class="profile-image-wrapper" style="position: relative; display: inline-block;">
+                <img src="img/user.png" class="img-responsive" style="border-radius: 50%; width: 280px; height: 280px; max-width: 100%; max-height: 400px; min-width: 250px; box-shadow: 0 15px 50px rgba(99, 102, 241, 0.4), 0 0 0 8px rgba(255, 255, 255, 0.1); object-fit: contain; animation: float 3s ease-in-out infinite; display: block; background: transparent;">
+                <div style="position: absolute; top: -10px; right: -10px; width: 50px; height: 50px; background: var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4); z-index: 10;">
+                  <i class="fa fa-code" style="color: white; font-size: 20px;"></i>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Text Content - Right Side on Desktop -->
+            <div class="col-md-8 col-sm-12 text-center" style="padding-left: 40px;">
+              <div style="text-align: left; max-width: 600px; margin: 0 auto;">
+                <p style="color: rgba(255, 255, 255, 0.8); font-size: 18px; margin-bottom: 10px; font-weight: 500; letter-spacing: 1px;">Hi there! 👋</p>
+                <h1 class="hero-name" style="color: white; margin-top: 0; margin-bottom: 20px; font-size: 56px; line-height: 1.2; text-align: left;">
+                  I'm <span style="color: var(--accent-color);">Prabhat Kumar</span>
+                </h1>
+                <div style="margin-bottom: 25px;">
+                  <h2 style="color: rgba(255, 255, 255, 0.95); font-size: 28px; font-weight: 600; margin-bottom: 10px; text-align: left; line-height: 1.4;">
+                    Mobile Application Developer
+                  </h2>
+                  <p class="tagline" style="color: rgba(255, 255, 255, 0.85); font-size: 18px; text-align: left; margin: 0; line-height: 1.6;">
+                    Building Cross-Platform Solutions with React Native, iOS & Android
+                  </p>
+                </div>
+                <div class="cta-group" style="margin-top: 40px; margin-bottom: 60px; justify-content: flex-start;">
+                  <a href="#portfolio" class="btn-modern page-scroll">View My Work</a>
+                  <a href="#contact" class="btn-modern btn-modern-secondary page-scroll" style="background: rgba(255, 255, 255, 0.2); border-color: white; color: white;">Get In Touch</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </header>
-      <div class="flex">
+      <div class="flex" style="margin-top: 80px; margin-bottom: 50px; gap: 30px; justify-content: center; flex-wrap: wrap; padding: 0 20px;">
 
-        <div>
-          <span class="icon fa fa-code"></span>
-          <h3>Full Stack Developer</h3>
-          <!-- <p>Suspendisse amet ullamco</p> -->
+        <div class="fade-in" style="padding: 30px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease; flex: 1; min-width: 250px; max-width: 300px;">
+          <span class="icon fa fa-mobile" style="font-size: 3em; color: white; margin-bottom: 15px;"></span>
+          <h3 style="color: white; margin-top: 15px;">Mobile Application Developer</h3>
+          <p style="color: rgba(255, 255, 255, 0.8); font-size: 14px; margin-top: 10px;">React Native, iOS, Android</p>
         </div>
 
-        <div>
-          <span class="icon fa fa-cloud"></span>
-          <h3>DevOps AWS Basic</h3>
-          <!-- <p>Class aptent taciti ad litora</p> -->
+        <div class="fade-in" style="padding: 30px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease; flex: 1; min-width: 250px; max-width: 300px;">
+          <span class="icon fa fa-code" style="font-size: 3em; color: white; margin-bottom: 15px;"></span>
+          <h3 style="color: white; margin-top: 15px;">Full Stack Developer</h3>
+          <p style="color: rgba(255, 255, 255, 0.8); font-size: 14px; margin-top: 10px;">Node.js, NestJS, MongoDB</p>
         </div>
 
-        <div>
-          <span class="icon fa fa-mobile"></span>
-          <h3>App Developer</h3>
-          <!-- <p>Nulla vitae mauris non felis</p> -->
+        <div class="fade-in" style="padding: 30px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease; flex: 1; min-width: 250px; max-width: 300px;">
+          <span class="icon fa fa-cloud" style="font-size: 3em; color: white; margin-bottom: 15px;"></span>
+          <h3 style="color: white; margin-top: 15px;">DevOps AWS Basic</h3>
+          <p style="color: rgba(255, 255, 255, 0.8); font-size: 14px; margin-top: 10px;">AWS, Docker, CI/CD</p>
         </div>
 
       </div>
 
+    </div>
+  </section>
+
       <!-- About Section -->
-      <div id="about">
-        <div>
+  <section id="about" style="background: rgba(255, 255, 255, 0.95); position: relative; z-index: 2;">
+    <div class="container">
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
               <div class="about-text">
-                <p>I’m a passionate Software Engineer with experience spanning across front-end and back-end development. From crafting seamless GUI applications, mobile apps, and web platforms to handling DevOps tasks on AWS, I have explored a diverse tech stack to build scalable and high-performance solutions.</p>
+            <p>I'm a passionate Mobile Application Developer with extensive experience in building cross-platform mobile applications using React Native, Expo, iOS, and Android. With expertise spanning mobile development, full-stack development, and DevOps, I have successfully published 5+ mobile apps to App Store & Play Store.</p>
 
-                  <p>With expertise in full-stack development, I have been involved in every phase of the software engineering lifecycle—from analysis and design to coding, testing, and deployment. My problem-solving mindset and deep understanding of system architecture help me deliver efficient and maintainable software.</p>
+            <p>My experience includes working with cutting-edge technologies like React Native, Kotlin, Swift, NestJS, Node.js, and various state management solutions (Redux, Zustand, Jotai). I have a proven track record of optimizing app performance, achieving 50% faster app launch times, reducing crash rates by 40%, and improving user retention by 30%.</p>
                   
-                  <p>I hold a Bachelor of Engineering (B.E.) from Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal, India, and I am currently based in Gurgaon. Always eager to learn and innovate, I thrive on challenges that push my technical boundaries.</p>
+            <p>I hold a Bachelor of Engineering (B.E.) in Electrical Engineering from Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal, Madhya Pradesh, and I am currently based in Gurugram, Haryana. Always eager to learn and innovate, I thrive on challenges that push my technical boundaries.</p>
                   
-                  <p>Let’s build something amazing together! 🚀</p>
+            <p>Let's build something amazing together! 🚀</p>
                 <p>A self-motivated programmer who constantly experimenting with new technologies since
-                  college days and eager to learn new things. “Always code as if the guy who ends up maintaining your
+              college days and eager to learn new things. "Always code as if the guy who ends up maintaining your
                   code will be a violent psychopath who knows
                   where you
-                  live.” - John Woods.</p>
-                <p class="text-center download_resume"><a class="btn btn-primary"
+              live." - John Woods.</p>
+            <p class="text-center download_resume" style="margin-top: 30px;"><a class="btn-modern"
                     href="resume.pdf" target="_blank"><i class="fa fa-download"></i>
                     Download Resume</a></p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="text-center">
+  <section id="skills" class="text-center section-spacing" style="background: var(--bg-light);">
     <div class="container">
       <div class="section-title center">
-        <h2>Skills</h2>
+        <h2>Skills & Technologies</h2>
         <hr>
       </div>
-      <div class="row">
-        <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="90"> <span class="percent">90</span>
-        </span>
-        <h4>React</h4>
+      
+      <!-- Mobile Development -->
+      <div class="row" style="margin-bottom: 40px;">
+        <div class="col-md-12">
+          <h3 style="text-align: left; margin-bottom: 25px; color: var(--primary-color); font-size: 28px;">
+            <i class="fa fa-mobile" style="margin-right: 10px;"></i>Mobile Development
+          </h3>
        </div>
-       <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span>
-       </span>
-       <h4>NextJS</h4>
+        <div class="col-md-3 col-sm-6 col-xs-6" style="margin-bottom: 20px;">
+          <div class="skill-card fade-in">
+            <div class="icon-badge" style="background: linear-gradient(135deg, #61dafb 0%, #20232a 100%);">
+              <i class="devicon-react-original" style="font-size: 32px; color: #61dafb;"></i>
       </div>
-       <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span>
-       </span>
        <h4>React Native</h4>
+            <p style="color: var(--text-light); font-size: 14px; margin-top: 8px;">Cross-platform mobile apps</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6" style="margin-bottom: 20px;">
+          <div class="skill-card fade-in">
+            <div class="icon-badge" style="background: linear-gradient(135deg, #7f52ff 0%, #000000 100%);">
+              <i class="fa fa-code" style="font-size: 32px; color: #7f52ff;"></i>
+            </div>
+            <h4>Kotlin</h4>
+            <p style="color: var(--text-light); font-size: 14px; margin-top: 8px;">Android development</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6" style="margin-bottom: 20px;">
+          <div class="skill-card fade-in">
+            <div class="icon-badge" style="background: linear-gradient(135deg, #fa7343 0%, #000000 100%);">
+              <i class="fa fa-apple" style="font-size: 32px; color: #fa7343;"></i>
+            </div>
+            <h4>Swift</h4>
+            <p style="color: var(--text-light); font-size: 14px; margin-top: 8px;">iOS development</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6" style="margin-bottom: 20px;">
+          <div class="skill-card fade-in">
+            <div class="icon-badge" style="background: linear-gradient(135deg, #000020 0%, #000000 100%);">
+              <i class="fa fa-mobile" style="font-size: 32px; color: #000020;"></i>
+            </div>
+            <h4>Expo</h4>
+            <p style="color: var(--text-light); font-size: 14px; margin-top: 8px;">React Native framework</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="88"> <span class="percent">88</span>
-        </span>
-        <h4>NodeJS</h4>
+
+      <!-- Backend & Frameworks -->
+      <div class="row" style="margin-bottom: 40px;">
+        <div class="col-md-12">
+          <h3 style="text-align: left; margin-bottom: 25px; color: var(--primary-color); font-size: 28px;">
+            <i class="fa fa-server" style="margin-right: 10px;"></i>Backend & Frameworks
+          </h3>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6" style="margin-bottom: 20px;">
+          <div class="skill-card fade-in">
+            <div class="icon-badge" style="background: linear-gradient(135deg, #339933 0%, #000000 100%);">
+              <i class="devicon-nodejs-plain" style="font-size: 32px; color: #339933;"></i>
+            </div>
+            <h4>Node.js</h4>
+            <p style="color: var(--text-light); font-size: 14px; margin-top: 8px;">JavaScript runtime</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6" style="margin-bottom: 20px;">
+          <div class="skill-card fade-in">
+            <div class="icon-badge" style="background: linear-gradient(135deg, #e0234e 0%, #000000 100%);">
+              <i class="fa fa-code" style="font-size: 32px; color: #e0234e;"></i>
+            </div>
+            <h4>NestJS</h4>
+            <p style="color: var(--text-light); font-size: 14px; margin-top: 8px;">Node.js framework</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6" style="margin-bottom: 20px;">
+          <div class="skill-card fade-in">
+            <div class="icon-badge" style="background: linear-gradient(135deg, #61dafb 0%, #20232a 100%);">
+              <i class="devicon-react-original" style="font-size: 32px; color: #61dafb;"></i>
+            </div>
+            <h4>React</h4>
+            <p style="color: var(--text-light); font-size: 14px; margin-top: 8px;">Frontend library</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6" style="margin-bottom: 20px;">
+          <div class="skill-card fade-in">
+            <div class="icon-badge" style="background: linear-gradient(135deg, #3178c6 0%, #000000 100%);">
+              <i class="fa fa-code" style="font-size: 32px; color: #3178c6;"></i>
+            </div>
+            <h4>TypeScript</h4>
+            <p style="color: var(--text-light); font-size: 14px; margin-top: 8px;">Typed JavaScript</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="87"> <span class="percent">87</span>
-      </span>
+
+      <!-- Databases & State Management -->
+      <div class="row" style="margin-bottom: 40px;">
+        <div class="col-md-12">
+          <h3 style="text-align: left; margin-bottom: 25px; color: var(--primary-color); font-size: 28px;">
+            <i class="fa fa-database" style="margin-right: 10px;"></i>Databases & State Management
+          </h3>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6" style="margin-bottom: 20px;">
+          <div class="skill-card fade-in">
+            <div class="icon-badge" style="background: linear-gradient(135deg, #47a248 0%, #000000 100%);">
+              <i class="devicon-mongodb-plain" style="font-size: 32px; color: #47a248;"></i>
+            </div>
       <h4>MongoDB</h4>
+            <p style="color: var(--text-light); font-size: 14px; margin-top: 8px;">NoSQL database</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6" style="margin-bottom: 20px;">
+          <div class="skill-card fade-in">
+            <div class="icon-badge" style="background: linear-gradient(135deg, #dc382d 0%, #000000 100%);">
+              <i class="fa fa-database" style="font-size: 32px; color: #dc382d;"></i>
     </div>
-    <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span>
-      </span>
-      <h4>MYSQL</h4>
+            <h4>Redis</h4>
+            <p style="color: var(--text-light); font-size: 14px; margin-top: 8px;">In-memory cache</p>
     </div>
-        <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="75"> <span class="percent">75</span>
-          </span>
-          <h4>Angular 18</h4>
         </div>
-        <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="90"> <span class="percent">90</span>
-          </span>
-          <h4>HTML5, CSS, Javascript</h4>
+        <div class="col-md-3 col-sm-6 col-xs-6" style="margin-bottom: 20px;">
+          <div class="skill-card fade-in">
+            <div class="icon-badge" style="background: linear-gradient(135deg, #764abc 0%, #000000 100%);">
+              <i class="fa fa-code" style="font-size: 32px; color: #764abc;"></i>
+            </div>
+            <h4>Redux/Zustand</h4>
+            <p style="color: var(--text-light); font-size: 14px; margin-top: 8px;">State management</p>
+          </div>
         </div>
-        <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="60"> <span class="percent">60</span>
-          </span>
-          <h4>Docker</h4>
+        <div class="col-md-3 col-sm-6 col-xs-6" style="margin-bottom: 20px;">
+          <div class="skill-card fade-in">
+            <div class="icon-badge" style="background: linear-gradient(135deg, #ffa000 0%, #000000 100%);">
+              <i class="fa fa-fire" style="font-size: 32px; color: #ffa000;"></i>
+            </div>
+            <h4>Firebase</h4>
+            <p style="color: var(--text-light); font-size: 14px; margin-top: 8px;">Backend services</p>
+          </div>
         </div>
-        <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="60"> <span class="percent">60</span>
-          </span>
-          <h4>Micro Service Architecture</h4>
+      </div>
+
+      <!-- Tools & Cloud -->
+      <div class="row">
+        <div class="col-md-12">
+          <h3 style="text-align: left; margin-bottom: 25px; color: var(--primary-color); font-size: 28px;">
+            <i class="fa fa-wrench" style="margin-right: 10px;"></i>Tools & Cloud
+          </h3>
         </div>
-        <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="90"> <span class="percent">90</span>
-          </span>
-          <h4>MERN Stack</h4>
+        <div class="col-md-3 col-sm-6 col-xs-6" style="margin-bottom: 20px;">
+          <div class="skill-card fade-in">
+            <div class="icon-badge" style="background: linear-gradient(135deg, #f05032 0%, #000000 100%);">
+              <i class="devicon-git-plain" style="font-size: 32px; color: #f05032;"></i>
+            </div>
+            <h4>Git</h4>
+            <p style="color: var(--text-light); font-size: 14px; margin-top: 8px;">Version control</p>
+          </div>
         </div>
-        <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span>
-        </span>
-        <h4>MEAN Stack</h4>
+        <div class="col-md-3 col-sm-6 col-xs-6" style="margin-bottom: 20px;">
+          <div class="skill-card fade-in">
+            <div class="icon-badge" style="background: linear-gradient(135deg, #ff9900 0%, #000000 100%);">
+              <i class="devicon-amazonwebservices-plain" style="font-size: 32px; color: #ff9900;"></i>
+            </div>
+            <h4>AWS</h4>
+            <p style="color: var(--text-light); font-size: 14px; margin-top: 8px;">Cloud services</p>
+          </div>
         </div>
-        <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="78"> <span class="percent">78</span>
-        </span>
-        <h4>GIT</h4>
+        <div class="col-md-3 col-sm-6 col-xs-6" style="margin-bottom: 20px;">
+          <div class="skill-card fade-in">
+            <div class="icon-badge" style="background: linear-gradient(135deg, #2496ed 0%, #000000 100%);">
+              <i class="devicon-docker-plain" style="font-size: 32px; color: #2496ed;"></i>
+            </div>
+            <h4>Docker</h4>
+            <p style="color: var(--text-light); font-size: 14px; margin-top: 8px;">Containerization</p>
+          </div>
         </div>
-        <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="74"> <span class="percent">74</span>
-        </span>
-        <h4>AWS</h4>
+        <div class="col-md-3 col-sm-6 col-xs-6" style="margin-bottom: 20px;">
+          <div class="skill-card fade-in">
+            <div class="icon-badge" style="background: linear-gradient(135deg, #007acc 0%, #000000 100%);">
+              <i class="fa fa-code" style="font-size: 32px; color: #007acc;"></i>
+            </div>
+            <h4>Xcode/Android Studio</h4>
+            <p style="color: var(--text-light); font-size: 14px; margin-top: 8px;">IDE tools</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
   <!-- Portfolio Section -->
-  <div id="portfolio">
+  <div id="portfolio" class="portfolio-section">
     <div class="container">
-      <div class="section-title text-center center">
+      <div class="section-title text-center">
         <h2>Portfolio</h2>
         <hr>
       </div>
-      <div class="categories">
-        <ul class="cat">
-          <li>
-            <ol class="type">
-              <li><a href="#" data-filter="*" class="active">All</a></li>
-              <li><a href="#" data-filter=".web">Full Stack Development</a></li>
-              <li><a href="#" data-filter=".app">Mobile App Development</a></li>
-              <li><a href="#" data-filter=".branding">DevOps AWS Basic</a></li>
-            </ol>
-          </li>
-        </ul>
-        <div class="clearfix"></div>
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="*">All</button>
+        <button class="filter-btn" data-filter=".web">Full Stack Development</button>
+        <button class="filter-btn" data-filter=".app">Mobile App Development</button>
+        <button class="filter-btn" data-filter=".branding">DevOps AWS Basic</button>
       </div>
-      <div class="row">
-        <div class="portfolio-items">
-          <!-- web, app, branding-->
-
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
-            <div class="portfolio-item">
-              <div class="hover-bg">
-                <a class="not-active" href="#?custom=true&width=500&height=344" onclick="changetext(1)"
-                  rel="prettyPhoto">
-                  <div class="hover-text">
-                    <h4>Dresma</h4>
-                    <small>Software Developer</small>
+      <div class="portfolio-grid">
+        <!-- Image Editor Application -->
+        <div class="portfolio-card web" data-category="web">
+          <a href="#?custom=true&width=500&height=344" onclick="changetext(1)" rel="prettyPhoto" class="portfolio-link">
+            <div class="portfolio-image">
+              <img src="https://proseobd.com/wp-content/uploads/2023/03/DoMyShoot-1024x576.jpg" alt="Image Editor Application">
                   </div>
-                  <img src="img/portfolio/9.png" class="img-responsive img-background" alt="">
-                </a>
+            <div class="portfolio-overlay">
+              <h4>Image Editor Application</h4>
+              <p>Software Developer</p>
+              <div class="tech-badges">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">React Native</span>
+                <span class="tech-badge">Node.js</span>
               </div>
             </div>
+          </a>
           </div>
 
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
-            <div class="portfolio-item">
-              <div class="hover-bg">
-                <a class="not-active" href="#?custom=true&width=500&height=344" onclick="changetext(2)"
-                  rel="prettyPhoto">
-                  <div class="hover-text">
+        <!-- MyWebLink -->
+        <div class="portfolio-card web" data-category="web">
+          <a href="#?custom=true&width=500&height=344" onclick="changetext(2)" rel="prettyPhoto" class="portfolio-link">
+            <div class="portfolio-image">
+              <img src="https://www.portal.weblinkltd.com/frontend/images/logo.png" alt="MyWebLink">
+            </div>
+            <div class="portfolio-overlay">
                     <h4>MyWebLink</h4>
-                    <small>Software Developer</small>
+              <p>Software Developer</p>
+              <div class="tech-badges">
+                <span class="tech-badge">Next.js</span>
+                <span class="tech-badge">Node.js</span>
+              </div>
                   </div>
-                  <img src="img/portfolio/1.png" class="img-responsive" alt="">
-                </a>
+          </a>
+        </div>
+
+        <!-- E-commerce Website -->
+        <div class="portfolio-card web" data-category="web">
+          <a href="#?custom=true&width=500&height=344" onclick="changetext(3)" rel="prettyPhoto" class="portfolio-link">
+            <div class="portfolio-image">
+              <img src="https://miro.medium.com/1*VNoETQG1aBwujmj9qMBbLQ.png" alt="E-commerce Website">
+            </div>
+            <div class="portfolio-overlay">
+              <h4>E-commerce Website</h4>
+              <p>Personal Project</p>
+              <div class="tech-badges">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Node.js</span>
               </div>
             </div>
+          </a>
           </div>
 
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
-            <div class="portfolio-item">
-              <div class="hover-bg">
-                <a href="#?custom=true&width=500&height=344" onclick="changetext(3)" rel="prettyPhoto"
-                  class="not-active">
-                  <div class="hover-text">
-                    <h4>E-commerce Website</h4>
-                    <small>Full Stack Developer</small>
+        <!-- Doctor Appointment -->
+        <div class="portfolio-card web" data-category="web">
+          <a href="#?custom=true&width=500&height=344" onclick="changetext(4)" rel="prettyPhoto" class="portfolio-link">
+            <div class="portfolio-image">
+              <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/367a6c122713367.Y3JvcCw2OTAzLDU0MDAsMTUzLDA.jpg" alt="Doctor Appointment">
+            </div>
+            <div class="portfolio-overlay">
+              <h4>Doctor Appointment</h4>
+              <p>Personal Project</p>
+              <div class="tech-badges">
+                <span class="tech-badge">Next.js</span>
+                <span class="tech-badge">Strapi</span>
+              </div>
                   </div>
-                  <img src="img/portfolio/13.jpg" class="img-responsive img-background" alt="">
-                </a>
+          </a>
+        </div>
+
+        <!-- MyLeague11 App -->
+        <div class="portfolio-card app" data-category="app">
+          <a href="#?custom=true&width=500&height=344" onclick="changetext(5)" rel="prettyPhoto" class="portfolio-link">
+            <div class="portfolio-image">
+              <img src="img/portfolio/10.jpg" alt="MyLeague11 App">
+            </div>
+            <div class="portfolio-overlay">
+              <h4>MyLeague11: Fantasy Cricket App</h4>
+              <p>Personal Project</p>
+              <div class="tech-badges">
+                <span class="tech-badge">React Native</span>
+                <span class="tech-badge">Node.js</span>
               </div>
             </div>
+          </a>
           </div>
 
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
-            <div class="portfolio-item">
-              <div class="hover-bg">
-                <a href="#?custom=true&width=500&height=344" onclick="changetext(4)" rel="prettyPhoto"
-                  class="not-active">
-                  <div class="hover-text">
-                    <h4>Doctor Appointment</h4>
-                    <small>Full Stack Developer</small>
+        <!-- Job search app -->
+        <div class="portfolio-card app" data-category="app">
+          <a href="#?custom=true&width=500&height=344" onclick="changetext(6)" rel="prettyPhoto" class="portfolio-link">
+            <div class="portfolio-image">
+              <img src="https://s3-alpha.figma.com/hub/file/5112719990/f43b67c2-f454-42a8-aeab-cf2e759ca4ad-cover.png" alt="Job search app">
+            </div>
+            <div class="portfolio-overlay">
+              <h4>Job search app</h4>
+              <p>Personal Project</p>
+              <div class="tech-badges">
+                <span class="tech-badge">Expo</span>
+              </div>
                   </div>
-                  <img src="img/portfolio/12.jpg" class="img-responsive" alt="">
-                </a>
+          </a>
+        </div>
+
+        <!-- Ludo App -->
+        <div class="portfolio-card app" data-category="app">
+          <a href="#?custom=true&width=500&height=344" onclick="changetext(11)" rel="prettyPhoto" class="portfolio-link">
+            <div class="portfolio-image">
+              <img src="https://static-perf1.zupee.com/blog-images/uploads/2025/10/Ludo-test-Image.webp" alt="Ludo App">
+            </div>
+            <div class="portfolio-overlay">
+              <h4>Ludo</h4>
+              <p>Zupee Game Application</p>
+              <div class="tech-badges">
+                <span class="tech-badge">React Native</span>
+                <span class="tech-badge">Kotlin</span>
+                <span class="tech-badge">Swift</span>
               </div>
             </div>
+          </a>
           </div>
 
-          <div class="col-sm-6 col-md-3 col-lg-3 app">
-            <div class="portfolio-item">
-              <div class="hover-bg">
-                <a href="#?custom=true&width=500&height=344" onclick="changetext(5)" rel="prettyPhoto"
-                  class="not-active">
-                  <div class="hover-text">
-                    <h4>MyLeague11: Fantasy Cricket App</h4>
-                    <small>Mobile Application Developer</small>
+        <!-- Rummy App -->
+        <div class="portfolio-card app" data-category="app">
+          <a href="#?custom=true&width=500&height=344" onclick="changetext(12)" rel="prettyPhoto" class="portfolio-link">
+            <div class="portfolio-image">
+              <img src="https://i.pinimg.com/474x/3e/96/52/3e96521fd6a0c384856875935f6b8542.jpg" alt="Rummy App">
+            </div>
+            <div class="portfolio-overlay">
+              <h4>Rummy</h4>
+              <p>Zupee Game Application</p>
+              <div class="tech-badges">
+                <span class="tech-badge">React Native</span>
+                <span class="tech-badge">Kotlin</span>
+                <span class="tech-badge">Swift</span>
+              </div>
                   </div>
-                  <img src="img/portfolio/10.jpg" class="img-responsive img-background" alt="">
-                </a>
+          </a>
+        </div>
+
+        <!-- Micro Drama Shots App -->
+        <div class="portfolio-card app" data-category="app">
+          <a href="#?custom=true&width=500&height=344" onclick="changetext(13)" rel="prettyPhoto" class="portfolio-link">
+            <div class="portfolio-image">
+              <img src="https://www.awazthevoice.in/upload/news/1761127469zupee_app.webp" alt="Micro Drama Shots App">
+            </div>
+            <div class="portfolio-overlay">
+              <h4>Micro Drama Shots</h4>
+              <p>Zupee Game Application</p>
+              <div class="tech-badges">
+                <span class="tech-badge">React Native</span>
+                <span class="tech-badge">Kotlin</span>
+                <span class="tech-badge">Swift</span>
               </div>
             </div>
+          </a>
           </div>
 
-          <div class="col-sm-6 col-md-3 col-lg-3 app">
-            <div class="portfolio-item">
-              <div class="hover-bg">
-                <a href="#?custom=true&width=500&height=344" onclick="changetext(6)" rel="prettyPhoto"
-                  class="not-active">
-                  <div class="hover-text">
-                    <h4>Job search app</h4>
-                    <small>Mobile Application Developer</small>
+        <!-- Astrology App -->
+        <div class="portfolio-card app" data-category="app">
+          <a href="#?custom=true&width=500&height=344" onclick="changetext(14)" rel="prettyPhoto" class="portfolio-link">
+            <div class="portfolio-image">
+              <img src="https://assets.neoastro.com/assets/neoastrohoroscope-001.webp" alt="Astrology App">
                   </div>
-                  <img src="img/portfolio/11.jpg" class="img-responsive img-background" alt="">
-                </a>
+            <div class="portfolio-overlay">
+              <h4>Astrology</h4>
+              <p>Zupee Game Application</p>
+              <div class="tech-badges">
+                <span class="tech-badge">React Native</span>
+                <span class="tech-badge">Kotlin</span>
+                <span class="tech-badge">Swift</span>
               </div>
             </div>
+          </a>
           </div>
 
-          <div class="col-sm-6 col-md-3 col-lg-3 branding">
-            <div class="portfolio-item">
-              <div class="hover-bg">
-                <a href="#?custom=true&width=500&height=344" onclick="changetext(7)" rel="prettyPhoto"
-                  class="not-active">
-                  <div class="hover-text">
-                    <h4>Automated Deployment Pipeline for a Web Application</h4>
-                    <small>DevOps AWS Basic</small>
+        <!-- Insurance Website -->
+        <div class="portfolio-card web" data-category="web">
+          <a href="#?custom=true&width=500&height=344" onclick="changetext(9)" rel="prettyPhoto" class="portfolio-link">
+            <div class="portfolio-image">
+              <img src="https://cdn.prod.website-files.com/68022f00177276ddaadfe855/68022f00177276ddaadff014_650376dcc4d411473488e7a9_agentimage1.jpeg" alt="Insurance Website">
                   </div>
-                  <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-                </a>
+            <div class="portfolio-overlay">
+              <h4>Insurance Website and Services</h4>
+              <p>Insurance Dekho</p>
+              <div class="tech-badges">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">NestJS</span>
               </div>
             </div>
+          </a>
           </div>
 
+        <!-- Deployment Pipeline -->
+        <div class="portfolio-card branding" data-category="branding">
+          <a href="#?custom=true&width=500&height=344" onclick="changetext(10)" rel="prettyPhoto" class="portfolio-link">
+            <div class="portfolio-image">
+              <img src="img/portfolio/4.jpg" alt="Deployment Pipeline">
+            </div>
+            <div class="portfolio-overlay">
+              <h4>Automated Deployment Pipeline</h4>
+              <p>DevOps AWS Basic</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -348,28 +596,36 @@
   <div id="achievements" class="text-center">
     <div class="container">
       <div class="section-title center">
-        <h2>Some Stats</h2>
+        <h2>Key Achievements</h2>
         <hr>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-4 wow fadeInDown" data-wow-delay="200ms">
-          <div class="achievement-box"> <span class="count">4</span>
-            <h4>Project Completed</h4>
+        <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-delay="200ms">
+          <div class="achievement-box card-modern">
+            <div class="achievement-icon"><i class="fa fa-mobile"></i></div>
+            <span class="count">5</span>
+            <h4>Mobile Apps Published</h4>
           </div>
         </div>
-        <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="400ms">
-        <div class="achievement-box"> <span class="count">10950</span>
-            <h4>Hours of Work </h4>
+        <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-delay="400ms">
+          <div class="achievement-box card-modern">
+            <div class="achievement-icon"><i class="fa fa-rocket"></i></div>
+            <span class="count">50</span>
+            <h4>% Faster App Launch</h4>
           </div>
         </div>
-        <!-- <div class="col-md-4 col-sm-4 wow fadeInDown" data-wow-delay="20ms">
-          <div class="achievement-box"> <span class="count">1</span>
-            <h4>Awards Won</h4>
+        <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-delay="200ms">
+          <div class="achievement-box card-modern">
+            <div class="achievement-icon"><i class="fa fa-line-chart"></i></div>
+            <span class="count">40</span>
+            <h4>% Crash Rate Reduction</h4>
           </div>
-        </div> -->
-        <div class="col-md-4 col-sm-4 wow fadeInDown" data-wow-delay="200ms">
-          <div class="achievement-box"> <span class="count">3</span>
-            <h4>+ Years of Experience</h4>
+        </div>
+        <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-delay="400ms">
+          <div class="achievement-box card-modern">
+            <div class="achievement-icon"><i class="fa fa-users"></i></div>
+            <span class="count">30</span>
+            <h4>% User Retention Improvement</h4>
           </div>
         </div>
       </div>
@@ -386,18 +642,68 @@
         <div class="col-lg-12">
           <ul class="timeline">
             <li>
-              <div class="timeline-image">
-                <h4>Sept 2022 <br>
-                  - <br>
-                  Present </h4>
+              <div class="timeline-image" style="background: white; display: flex; align-items: center; justify-content: center;">
+                <img src="https://logo.clearbit.com/zupee.com" alt="Zupee" class="company-logo" onerror="this.style.display='none'; this.parentElement.innerHTML='<h4>Aug 2025<br>-<br>Present</h4>';">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Zupee</h4>
+                  <h4 class="subheading">Software Engineer - Mobile App Development</h4>
+                  <p style="color: var(--text-light); font-size: 14px; margin-top: 5px;"><i class="fa fa-map-marker"></i> Gurugram, Haryana</p>
+                </div>
+                <div class="timeline-body">
+                  <p>Developing mobile applications using React Native, Kotlin, and Swift. Working with HyperSDK, UPI integration, Firebase Analytics, CleverTap, and Crashlytics to build scalable gaming applications.</p>
+                  <div style="margin-top: 15px;">
+                    <span class="tech-badge">React Native</span>
+                    <span class="tech-badge">Kotlin</span>
+                    <span class="tech-badge">Swift</span>
+                    <span class="tech-badge">HyperSDK</span>
+                    <span class="tech-badge">Firebase</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image" style="background: white; display: flex; align-items: center; justify-content: center;">
+                <img src="https://logo.clearbit.com/insurancedekho.com" alt="InsuranceDekho" class="company-logo" onerror="this.style.display='none'; this.parentElement.innerHTML='<h4>Mar 2025<br>-<br>Jul 2025</h4>';">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>InsuranceDekho</h4>
+                  <h4 class="subheading">Software Engineer</h4>
+                  <p style="color: var(--text-light); font-size: 14px; margin-top: 5px;"><i class="fa fa-map-marker"></i> Gurugram, Haryana</p>
+                </div>
+                <div class="timeline-body">
+                  <p>Developed backend services using NestJS and Node.js. Implemented Firebase Cloud Messaging, WebSocket for real-time communication, Redis for caching, and MongoDB for data persistence.</p>
+                  <div style="margin-top: 15px;">
+                    <span class="tech-badge">NestJS</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">MongoDB</span>
+                    <span class="tech-badge">Redis</span>
+                    <span class="tech-badge">WebSocket</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image" style="background: white; display: flex; align-items: center; justify-content: center;">
+                <img src="https://logo.clearbit.com/dresma.com" alt="Dresma" class="company-logo" onerror="this.style.display='none'; this.parentElement.innerHTML='<h4>Sept 2022<br>-<br>Feb 2025</h4>';">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
                   <h4>Dresma</h4>
-                  <h4 class="subheading">Software Engineer</h4>
+                  <h4 class="subheading">Software Engineer - Mobile App Development</h4>
+                  <p style="color: var(--text-light); font-size: 14px; margin-top: 5px;"><i class="fa fa-map-marker"></i> Gurugram, Haryana</p>
                 </div>
                 <div class="timeline-body">
-                  <p>Empowering eCommerce Content with AI which helps BIG and SMALL online brands create hyper contextual content that sells.</p>
+                  <p>Developed mobile applications using React Native with Redux Toolkit and TanStack Query for state management. Integrated Strapi CMS and Segment for analytics. Built and maintained cross-platform mobile applications.</p>
+                  <div style="margin-top: 15px;">
+                    <span class="tech-badge">React Native</span>
+                    <span class="tech-badge">Redux Toolkit</span>
+                    <span class="tech-badge">TanStack Query</span>
+                    <span class="tech-badge">Strapi</span>
+                    <span class="tech-badge">Segment</span>
+                  </div>
                 </div>
               </div>
             </li>
@@ -414,22 +720,6 @@
                 </div>
                 <div class="timeline-body">
                   <p>Developed customized e-commerce websites with robust APIs to enhance the online presence and operational efficiency of local retailers.</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="timeline-image">
-                <h4>Jun 2019 <br>
-                  - <br>
-                  Mar 2020 </h4>
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>Innovative Project Solution</h4>
-                  <h4 class="subheading">Robotics Engineer</h4>
-                </div>
-                <div class="timeline-body">
-                  <p>Built and tested prototypes of robotic systems, iterating designs based on performance data and user feedback.</p>
                 </div>
               </div>
             </li>
@@ -503,62 +793,103 @@
       </div>
     </div>
   </div>
-  <!-- Contact Section -->
-  <div id="contact" class="text-center">
+  <!-- Certifications Section -->
+  <section id="certifications" class="certifications-section">
     <div class="container">
-      <div class="section-title center">
-        <h2>Contact</h2>
+      <div class="section-title text-center">
+        <h2>Certifications</h2>
+        <p class="certifications-subtitle">Professional certifications and courses completed</p>
         <hr>
       </div>
-      <div class="col-md-8 col-md-offset-2">
-        <div class="col-md-4"> <i class="fa fa-map-marker fa-2x"></i>
-          <p>Gurgaon<br>
-            Haryana, PIN 122001</p>
+      <div class="certifications-grid">
+        <div class="certification-card">
+          <div class="certification-icon-wrapper">
+            <i class="devicon-nodejs-plain"></i>
+          </div>
+          <h4>Node.js</h4>
+          <p class="certification-provider">Udemy</p>
+          <div class="certification-badge">
+            <a href="https://www.udemy.com/certificate/UC-d94c1ba8-3f75-48b0-bf82-0ee47d1f26c8/" target="_blank">
+            <i class="fa fa-certificate"></i>
+            <span>Certified</span>
+            </a>
+          </div>
         </div>
-        <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
-          <p>prabhatkumar944@gmail.com</p>
+        <div class="certification-card">
+          <div class="certification-icon-wrapper">
+            <i class="devicon-mongodb-plain"></i>
+          </div>
+          <h4>MongoDB</h4>
+          <p class="certification-provider">MongoDB University</p>
+          <div class="certification-badge">
+            <a href="https://learn.mongodb.com/c/3CJnbzOcSbeSqoDI4TkOrQ" target="_blank">
+              <i class="fa fa-certificate"></i>
+              <span>Certified</span>
+            </a>
+          </div>
         </div>
-        <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
-          <p> +91 9939147728</p>
+        <div class="certification-card">
+          <div class="certification-icon-wrapper">
+            <i class="devicon-react-original"></i>
+          </div>
+          <h4>React</h4>
+          <p class="certification-provider">HackerRank</p>
+          <div class="certification-badge">
+            <a href="https://www.hackerrank.com/certificates/eecbe2368251" target="_blank">
+            <i class="fa fa-certificate"></i>
+            <span>Certified</span>
+            </a>
+          </div>
         </div>
-        <div class="clearfix"></div>
       </div>
-      <div class="col-md-8 col-md-offset-2">
-        <!-- <h3>Leave me a message</h3> -->
-        <!-- <form name="sentMessage" id="contactForm" novalidate>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-              <p class="help-block text-danger"></p>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <div id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Get In Touch</h2>
+        <p class="contact-subtitle">Let's build something amazing together! 🚀</p>
+        <hr>
             </div>
+      <div class="contact-info-grid">
+        <div class="contact-card">
+          <div class="contact-icon-wrapper">
+            <i class="fa fa-map-marker"></i>
           </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-              <p class="help-block text-danger"></p>
+          <h4>Location</h4>
+          <p>Gurugram, Haryana<br>India</p>
             </div>
+        <div class="contact-card">
+          <div class="contact-icon-wrapper">
+            <i class="fa fa-envelope-o"></i>
           </div>
+          <h4>Email</h4>
+          <p><a href="mailto:prabhatkumar944@gmail.com">prabhatkumar944@gmail.com</a></p>
         </div>
-        <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-          <p class="help-block text-danger"></p>
+        <div class="contact-card">
+          <div class="contact-icon-wrapper">
+            <i class="fa fa-phone"></i>
+          </div>
+          <h4>Phone</h4>
+          <p><a href="tel:+919939147728">+91 9939147728</a></p>
         </div>
-        <div id="success"></div>
-        <button type="submit" class="btn btn-default">Send Message</button>
-      </form> -->
-        <div class="social">
-          <ul>
-            <li><a href="# target="_blank"><i class="fa fa-facebook"></i></a>
-            </li>
-            <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
-            <li><a class="page-scroll" href="#page-top" rel="nofollow"><i class="fa fa-dribbble"></i></a></li>
-            <!-- <li><a href="#"><i class="fa fa-github"></i></a></li> -->
-            <li><a href="#" target="_blank"><i
-                  class="fa fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/prabhat-kumar-developer/" target="_blank"><i
-                  class="fa fa-linkedin"></i></a></li>
-          </ul>
+      </div>
+      <div class="social-links-section">
+        <h3 class="social-title">Connect With Me</h3>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/prabhat-kumar-developer/" target="_blank" class="social-link linkedin" aria-label="LinkedIn">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Prabhat944" target="_blank" class="social-link github" aria-label="GitHub">
+            <i class="fa fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/prabhat.404/" target="_blank" class="social-link instagram" aria-label="Instagram">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="#" target="_blank" class="social-link globe" aria-label="Website">
+            <i class="fa fa-globe"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -566,14 +897,13 @@
   <div id="footer">
     <div class="container text-center">
       <div class="fnav">
-        <p>Copyright &copy; 2025 Prabhat kumar. Designed and Developed by <a class="page-scroll" href="#page-top"
+        <p>Copyright &copy; 2025 Prabhat kumar. Designed and Developed by <a class="page-scroll" id="footer-link" href="#page-top"
             rel="nofollow">Prabhat kumar</a></p>
       </div>
     </div>
   </div>
   <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/SmoothScroll.js"></script>
   <script type="text/javascript" src="js/easypiechart.js"></script>
   <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
   <script type="text/javascript" src="js/jquery.isotope.js"></script>
@@ -582,6 +912,7 @@
   <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
   <script type="text/javascript" src="js/contact_me.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/animations.js"></script>
 
 
   <script type="text/javascript">
@@ -622,4 +953,7 @@
 
 </body>
 
+</html>
+</html>
+</html>
 </html>

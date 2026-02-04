@@ -1,0 +1,408 @@
+/* Animations CSS File */
+
+/* Fade In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Modern Card Design */
+.card-modern {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-modern:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Ensure card-modern doesn't affect portfolio items */
+.portfolio-item.card-modern,
+.portfolio-item .card-modern {
+    background: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Gradient Text */
+.gradient-text {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+/* Modern Button */
+.btn-modern {
+    background: var(--gradient-hero);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 30px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    white-space: nowrap;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.btn-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
+.btn-modern-secondary {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-modern-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Icon Badge */
+.icon-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: var(--bg-light);
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.icon-badge:hover {
+    transform: scale(1.1);
+    background: var(--gradient-card);
+}
+
+.icon-badge img,
+.icon-badge svg {
+    width: 32px;
+    height: 32px;
+}
+
+/* Company Logo Styling */
+.company-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: contain;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.company-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0%, 100% { 
+        transform: scale(1); 
+    }
+    50% { 
+        transform: scale(1.05); 
+    }
+}
+
+.achievement-box:hover {
+    animation: pulse 2s infinite;
+}
+
+/* Skill Card */
+.skill-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .skill-card {
+        min-height: 180px;
+        padding: 20px;
+    }
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.2);
+    border-color: var(--primary-color);
+}
+
+.skill-card .icon-wrapper {
+    margin-bottom: 15px;
+}
+
+.skill-card h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--text-dark);
+}
+
+/* Technology Badge */
+.tech-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    font-size: 12px;
+    font-weight: 500;
+    margin: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.tech-badge:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    min-width: 44px;
+    min-height: 44px;
+    background: var(--gradient-hero);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+    }
+}
+
+.back-to-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top.visible {
+    display: flex;
+}
+
+/* Tagline Styling */
+.tagline {
+    font-size: 20px;
+    color: var(--text-light);
+    font-weight: 400;
+    margin: 15px 0 30px 0;
+    letter-spacing: 0.5px;
+}
+
+/* Section Spacing */
+.section-spacing {
+    padding: 100px 0;
+}
+
+/* Hero Name */
+.hero-name {
+    font-size: 64px;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    line-height: 1.1;
+}
+
+@media (max-width: 768px) {
+    .hero-name {
+        font-size: 42px;
+    }
+}
+
+/* CTA Button Group */
+.cta-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .cta-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0 15px;
+    }
+    
+    .cta-group .btn-modern {
+        width: 100%;
+        max-width: 280px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-group {
+        padding: 0 10px;
+    }
+    
+    .cta-group .btn-modern {
+        max-width: 100%;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+/* Achievement Icon */
+.achievement-icon {
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+* {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Profile Image Wrapper for Transparent Background */
+.profile-image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: radial-gradient(circle, 
+        rgba(99, 102, 241, 0.2) 0%, 
+        rgba(99, 102, 241, 0.1) 50%,
+        transparent 100%);
+    border-radius: 50%;
+    z-index: -1;
+    animation: float 3s ease-in-out infinite;
+}
+
+.profile-image-wrapper img {
+    position: relative;
+    z-index: 0;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.2));
+}
+
+/* Floating Animation for Profile Image */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-name {
+        font-size: 42px !important;
+        text-align: center !important;
+    }
+    
+    #banner header .col-md-8 {
+        padding-left: 0 !important;
+        text-align: center !important;
+    }
+    
+    #banner header .col-md-8 > div {
+        text-align: center !important;
+    }
+    
+    #banner header h1,
+    #banner header h2,
+    #banner header p {
+        text-align: center !important;
+    }
+    
+    .cta-group {
+        justify-content: center !important;
+    }
+    
+    #banner header .profile-image-wrapper img {
+        width: 250px !important;
+        height: 250px !important;
+        min-width: 250px !important;
+        max-height: 250px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #banner header .profile-image-wrapper img {
+        width: 200px !important;
+        height: 200px !important;
+        min-width: 200px !important;
+        max-height: 200px !important;
+    }
+}
