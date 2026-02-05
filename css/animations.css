@@ -405,4 +405,18 @@ html {
         min-width: 200px !important;
         max-height: 200px !important;
     }
+
+    .achievement-icon {
+        font-size: 32px !important;
+        height: 45px !important;
+        margin-bottom: 6px !important;
+    }
+}
+
+@media (max-width: 390px) {
+    .achievement-icon {
+        font-size: 28px !important;
+        height: 40px !important;
+        margin-bottom: 5px !important;
+    }
 }
