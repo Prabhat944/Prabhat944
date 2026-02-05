@@ -70,16 +70,16 @@
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=prabhat944&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=prabhat944&layout=compact&langs_count=8&theme=tokyonight"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=prabhat944&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117" alt="prabhat944" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=prabhat944&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="prabhat944" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=prabhat944&theme=tokyonight" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com/?user=prabhat944&theme=tokyonight&hide_border=true&background=0D1117" alt="prabhat944" />
 </div>
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=prabhat944&theme=tokyonight&no-frame=false&no-bg=true&margin-w=4" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=prabhat944&theme=tokyonight&no-frame=false&no-bg=true&margin-w=4&column=7" alt="prabhat944" />
 </div>
 
 ---
@@ -115,14 +115,14 @@
 ## 📈 GitHub Activity Graph
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=prabhat944&theme=tokyo-night&hide_border=true" alt="GitHub Activity Graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=prabhat944&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF" alt="GitHub Activity Graph" />
 </div>
 
 ---
 
 ## 💻 Languages and Tools
 
-<div align="center">
+<div align="center" style="background-color: #1a1a2e; padding: 20px; border-radius: 10px; margin: 20px 0;">
   <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="50" height="50"/> 
   </a>
